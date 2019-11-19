@@ -15,6 +15,8 @@ function makeChartForAccommodationTypes(accommodations) {
     }
   });
 
+  console.log(typeOfAccommodation);
+
   Highcharts.chart('types-of-accommodation-chart', {
     chart: {
       type: 'column'

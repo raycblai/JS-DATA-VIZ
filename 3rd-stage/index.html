@@ -33,7 +33,46 @@
       </div>
     </div>
 
+    <div class="container">
+      <div class="row">
+        <div class="col-4">
+          <div id="types-of-accommodation-chart"></div>
+        </div>
+
+        <div class="col-5">
+          <div id="accomodation-price-chart"></div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12">
+          <div id="neighbourhood-chart"></div>
+        </div>
+      </div>
+    </div>
+
     <script src="https://code.highcharts.com/highcharts.js"></script>
+
+    <script src="data/airbnb-data.js"></script>
+
+    <script src="charts/types-of-accommodation.js"></script>
+
+    <script src="charts/accomodation-price-chart.js"></script>
+
+    <script src="charts/neighbourhood-chart.js"></script>
+
+    <script>
+      makeChartForAccommodationTypes(window.airbnbAccomodationData);
+    </script>
+
+    <script>
+      accomodationPriceChart(window.airbnbAccomodationData);
+    </script>
+
+    <script>
+      neighbourhoodChart(window.airbnbAccomodationData);
+    </script>
+
     <script>
       Highcharts.chart('line-chart', {
         chart: {
